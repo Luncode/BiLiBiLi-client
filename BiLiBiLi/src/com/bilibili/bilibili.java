@@ -1,3 +1,4 @@
+package com.bilibili;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -16,7 +17,7 @@ import javax.swing.event.HyperlinkEvent;
 import javax.swing.event.HyperlinkListener;
 
 
-public class bilibili implements ActionListener{
+public class bilibili{
 		
 	private String path;
 	
@@ -36,8 +37,6 @@ public class bilibili implements ActionListener{
 			System.out.println("加载错误");
 		} 
 		
-		
-
 		//创建名称窗口
 		JFrame bili = new JFrame("哔哩哔哩 - ( ゜- ゜)つロ  乾杯~");
 		
@@ -57,12 +56,11 @@ public class bilibili implements ActionListener{
 		//菜单下拉栏
 		String login[]={"个人中心","我的钱包","投稿管理","收藏","历史记录"};
 		JMenuItem item[]=new JMenuItem[login.length];
-		for (int i = 0; i < item.length; i++) {
+		for(int i = 0; i < item.length; i++) {
 			item[i]=new JMenuItem(login[i]);
-			//item[0].addActionListener(new bilibili());
-			menu[0].add(login[i]);
+			item[i].addActionListener(new Action());
+			menu[0].add(item[i]);
 		}
-		
 		//搜索账号
 		JTextArea tArea = new JTextArea(10,20);
 		tArea=new JTextArea("搜索AV号");
@@ -71,7 +69,7 @@ public class bilibili implements ActionListener{
 		//关于作者
 		JMenuItem aboutItem = new JMenuItem("官方网站");
 		menu[2].add(aboutItem);
-		aboutItem.addActionListener(new bilibili());
+		aboutItem.addActionListener(new Action());
 		
 		//Flowlayout布局
 		bili.setLayout(new FlowLayout(0));
@@ -98,16 +96,6 @@ public class bilibili implements ActionListener{
 
 	      }
 
-		public void actionPerformed(ActionEvent event) {
-			
-			if (event.getActionCommand().equals("官方网站")) {
-				JOptionPane.showMessageDialog(null, "暂无");
-			}
-//			if(event.getActionCommand().equals("个人中心")){
-//				JOptionPane.showMessageDialog(null, "开发中。。。");
-//			}
-			
-		}
 		
 	}
 
