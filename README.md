@@ -4,10 +4,15 @@
 - DJNativeSwing.jar (**chrriis**)
 - DJNativeSwing-SWT.jar(**chrriis**)
 - Gson.jar(**Google**)
+- beautyeye_lnf(**Jack Jiang**)
 
-#这个版本
+###新增了番剧时刻表（还未完成）
+<img src="https://luncode.github.io/BiLiBiLi-client/images/newbangumi1.png"/>
+###修改beautyeye_lnf皮肤的版本
+<img src="https://luncode.github.io/BiLiBiLi-client/images/3.png"/>
+###这个版本
 <img src="https://luncode.github.io/BiLiBiLi-client/images/2.png"/>
-#上一个版本
+###上一个版本
 <img src="https://luncode.github.io/BiLiBiLi-client/images/1.jpg"/>
 
 
