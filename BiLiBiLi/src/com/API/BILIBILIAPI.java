@@ -8,7 +8,7 @@ public class BILIBILIAPI {
 	final public static String followings = "https://api.bilibili.com/x/relation/followings?vmid="+Userid;
 	final public static String followers = "https://api.bilibili.com/x/relation/followers?vmid="+Userid;
 	final public static String userinfo = "https://api.bilibili.com/x/space/myinfo";
-	final public static String miduserinfo = "https://api.bilibili.com/x/space/acc/info?mid=34818804";
+	final public static String miduserinfo = "https://api.bilibili.com/x/space/acc/info?mid=";
 }	
 //bangumi =>  https://bangumi.bilibili.com/api/timeline_v2_global
 //

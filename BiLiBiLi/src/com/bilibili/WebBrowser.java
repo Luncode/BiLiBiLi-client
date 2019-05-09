@@ -26,11 +26,13 @@ public class WebBrowser extends JPanel {
 		   JPanel webBrowserPanel = new JPanel(new BorderLayout());
 		   webBrowserPanel.setBorder(BorderFactory.createTitledBorder("ﬂŸ¡®ﬂŸ¡® - ( ©b- ©b)§ƒ•Ì  «¨±≠~"));
 		   final JWebBrowser webBrowser = new JWebBrowser();
-		   webBrowser.isMenuBarVisible();
+		   webBrowser.setMenuBarVisible(false);
+		   webBrowser.setStatusBarVisible(false);
+		   webBrowser.setBarsVisible(false);//“˛≤ÿµÿ÷∑¿∏
 		   webBrowser.navigate(BILIBILIAPI.index);
 		   webBrowserPanel.add(webBrowser, BorderLayout.CENTER);
 		   add(webBrowserPanel, BorderLayout.CENTER);
-		   setSize(1000,800);
+		   setSize(1200,700);
 	  }
 	  
 	  //≤‚ ‘¿‡

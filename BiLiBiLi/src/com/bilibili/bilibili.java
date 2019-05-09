@@ -30,24 +30,21 @@ public class bilibili extends JFrame{
 		UIUtils.setPreferredLookAndFeel();
 		NativeInterface.open();
 		SwingUtilities.invokeLater(new Runnable() {
-			
 			@Override
 			public void run() {
 				// TODO Auto-generated method stub
 				//创建名称窗口
-				JFrame bili = new JFrame("哔哩哔哩 - ( ゜- ゜)つロ  乾杯~");
-				
+				setTitle("哔哩哔哩 - ( ゜- ゜)つロ  乾杯~");
 				//图标
 				Image ico= Toolkit.getDefaultToolkit().getImage("icon/icon.png");
 				
 				//菜单栏
 				JMenuBar menuBar=new JMenuBar(); 
-				String mString[]={"用户登录","搜索AV号","关于"};
+				String mString[]={"用户操作","搜索AV号","关于"};
 				JMenu menu[]=new JMenu[mString.length];//菜单
 				for (int i = 0; i < mString.length; i++) {
 					menu[i] = new JMenu(mString[i]);
 					menuBar.add(menu[i]);
-					
 				}
 				
 				//菜单下拉栏
@@ -69,24 +66,23 @@ public class bilibili extends JFrame{
 				aboutItem.addActionListener(new Action());
 				
 				//定义图标
-				bili.setIconImage(ico);
+				setIconImage(ico);
 				
 				//添加菜单栏
-				bili.add(menuBar,BorderLayout.NORTH);
+				add(menuBar,BorderLayout.NORTH);
 				
 				//显示网页内容
-				bili.add(new WebBrowser(),BorderLayout.CENTER);
+				add(new WebBrowser(),BorderLayout.CENTER);
 				
 				//窗口大小
-				bili.setSize(1000, 800);
+				setSize(1200, 700);
 				
 				//退出清除缓存
-				bili.setDefaultCloseOperation(bilibili.EXIT_ON_CLOSE);
+				setDefaultCloseOperation(bilibili.EXIT_ON_CLOSE);
 				//窗口位置居中
-				bili.setLocationRelativeTo(null);
+				setLocationRelativeTo(null);
 				//窗口可见性
-				bili.setVisible(true);
-
+				setVisible(true);
 			}
 		});
 		NativeInterface.runEventPump();
