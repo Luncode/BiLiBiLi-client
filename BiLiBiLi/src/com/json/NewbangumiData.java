@@ -33,6 +33,5 @@ public class NewbangumiData {
 			System.out.println(iterator.next());
 		}
 		
-		
 	}
 }

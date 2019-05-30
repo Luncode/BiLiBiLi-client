@@ -21,3 +21,4 @@ public class BILIBILIAPI {
 //userinfo => https://api.bilibili.com/x/space/myinfo
 //
 //miduserinfo =>https://api.bilibili.com/x/space/acc/info?mid=34818804
+//»­ÓÑ => https://api.vc.bilibili.com/link_draw/v2/Doc/index?type=recommend&page_num=0&page_size=45
