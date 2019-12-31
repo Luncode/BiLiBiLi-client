@@ -19,11 +19,17 @@ public class Test {
 		while(relIterator.hasNext()) {
 			List sealist = relIterator.next().getSeasons();
 			//System.out.println(relIterator.next().getSeasons());
-			Iterator<SeasonsBean> rIterator = sealist.iterator();
-			Iterator<SeasonsBean> rIterator2 = sealist.iterator();
+			Iterator<SeasonsBean> rIterator = sealist.iterator();  //获得13组List数据
+			Iterator<SeasonsBean> rIterator2 = sealist.listIterator(2);
+			
+			//System.out.println(rIterator);
 			while(rIterator.hasNext()) {
-				System.out.println(rIterator.next().getTitle());
+				System.out.print(rIterator.next().getTitle()+"\t");
+				System.out.println();
 			}
+//			while(rIterator2.hasNext()) {
+//				System.out.println(rIterator2.next().getPub_time());
+//			}
 		}
 	}
     public static List getMainData() {
